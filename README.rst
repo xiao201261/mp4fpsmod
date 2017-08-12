@@ -2,6 +2,11 @@
 mp4fpsmod
 =========
 
+NOTICE
+-------------
+This is a fork for internal use only, the code of this fork will probably not be updated unless we discover a serious problem.
+Please go to the original repository if you want to contribute to this project.
+
 What is this?
 -------------
 Tiny mp4 time code editor.
