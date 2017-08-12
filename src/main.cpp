@@ -201,7 +201,7 @@ void parseTimecodeV2(Option &opt, std::istream &is, size_t count)
         double stamp;
         if (std::strchr(line.c_str(), '.')) is_float = true;
         if (std::sscanf(line.c_str(), "%lf", &stamp) == 1) {
-            if (opt.timecodes.size() && stamp <= opt.timecodes.back()) {
+            if (opt.timecodes.size() && stamp < opt.timecodes.back()) {
                 std::stringstream msg;
                 msg << "Timecode is not monotone increasing! at line " << nline;
                 throw std::runtime_error(msg.str());
